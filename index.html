@@ -8,19 +8,22 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 </head>
 <body>
-	<h1>Coversión de divisas</h1>
+	
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6">
+				<h1>Coversión de divisas</h1>
 				<div class="form-group">
-					<div class="input-group">
-  					<span class="input-group-addon" id="basic-addon1">$CLP</span>
-  					<input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+					<input id="pesos_ch" placeholder="Ingresa monto CLP" type="number" value="">
+            </input>
+            <button id="b_pesos_ch">
+                convertir
+            </button>
   					<table class="table">
 						  <thead>
 						    <tr>
-						      <th scope="col">First</th>
-						      <th scope="col">Last</th>
+						      <th scope="col">MONEDA</th>
+						      <th scope="col">Cambio</th>
 						    </tr>
 						  </thead>
 						  <tbody>
@@ -46,13 +49,46 @@
 				</div>
 			</div>
 		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<h1>Valor $CLP hoy</h1>
+				<input id="pesos_ch" placeholder="Ingresa monto CLP" type="number" value="">
+            </input>
+            <button id="b_dolar">
+                convertir
+            </button>
+  					 <table class="table table-striped">
+                <tr>
+                    <td>
+                        DOLAR
+                    </td>
+                    <td>
+                        EURO
+                    </td>
+                    <td>
+                        UF
+                    </td>
+                    <td>
+                        UTM
+                    </td>
+                </tr>
+                <tr>
+                    <td id="a_dolar">
+                    </td>
+                    <td id="a_euro">
+                    </td>
+                    <td id="a_uf">
+                    </td>
+                    <td id="a_utm">
+                    </td>
+                </tr>
+            </table>
+			</div>
+		</div>
 	</div>
-<script
-src="https://code.jquery.com/jquery-3.3.1.min.js"
-integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-crossorigin="anonymous"></script>
-  <!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<script src="app.js"></script>
-</body>
+        <script crossorigin="anonymous" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" src="https://code.jquery.com/jquery-3.3.1.min.js">
+        </script>
+        <script src="app.js">
+        </script>
+    </body>
 </html>
